@@ -1,9 +1,9 @@
 import React from 'react'
-import Button from './Button'
+import Nav from './components/nav'
 const App = () => {
   return (
    <>
-   
+  <Nav/>
    </>
   )
 }
