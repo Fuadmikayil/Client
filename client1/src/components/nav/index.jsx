@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.scss"
-const Nav = ({logo,btnText}) => {
+const Nav = ({logo = "Ruslanın Moykası",...props}) => {
   return (
     <header>
         <h1>
