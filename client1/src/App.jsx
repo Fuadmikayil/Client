@@ -3,7 +3,7 @@ import Nav from './components/nav'
 const App = () => {
   return (
    <>
-  <Nav/>
+  <Nav logo={"hakuna"} btnText={"sign in"} />
    </>
   )
 }

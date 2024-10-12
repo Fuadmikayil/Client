@@ -1,17 +1,17 @@
 import React from 'react'
 import "./style.scss"
-const Nav = () => {
+const Nav = ({logo,btnText}) => {
   return (
     <header>
         <h1>
-NAV
+        {logo}
         </h1>
         <nav>
             <a href="#">Link</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
-        <button>Log in</button>
+        <button>{btnText}</button>
     </header>
   )
 }
