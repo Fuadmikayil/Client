@@ -1,17 +1,33 @@
 import React from 'react'
 import "./style.scss"
-const Nav = ({logo = "Ruslanın Moykası",...props}) => {
+const Nav = ({logo = "Ruslanın Moykası", ...props }) => {
+    const links = [
+        {
+            title:"Home",
+            href:"/"
+        },
+        {
+            title:"About",
+            href:"/about"
+        },
+        {
+            title:"Contact",
+            href:"/contact"
+        },
+    ]
   return (
     <header>
         <h1>
         {logo}
         </h1>
         <nav>
-            <a href="#">Link</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+           {
+            links.map((item,index) =>{
+                return  
+            })
+           }
         </nav>
-        <button>{btnText}</button>
+        <button>{props.btnText}</button>
     </header>
   )
 }
